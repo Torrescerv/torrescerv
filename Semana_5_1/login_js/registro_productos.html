@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Productos</h1>
+        <form id="productForm">
+        <div class="form-group">
+            <label for="description">description</label>
+            <input type="text" id="description" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Cantidad</label>
+            <input type="number"  id="quantity" required min="1">
+        </div>
+        <div class="form-group">
+            <label for="price">Precio</label>
+            <input type="number" id="price" required step="0.01" min="0">
+        </div>
+        <button type="submit">Agregar Producto</button>
+        </form>
+        <h2>Productos Registrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+                <!-- aQUÍ SE AÑADIRÁN LOS PRODUCTOS REGISTRADOS-->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
